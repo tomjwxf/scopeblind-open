@@ -4,6 +4,8 @@
 
 ScopeBlind uses VOPRF (Verifiable Oblivious Pseudorandom Functions) to enforce quotas without storing any user data. Perfect for AI demos, anonymous trials, and abuse prevention.
 
+> **Security Model**: The client SDK is fully open source and auditable. The verifier runs on our edge infrastructure — if you need a self-hosted option, [contact us](mailto:tommy@scopeblind.com).
+
 ## How It Works
 
 1. **Client mints a token** (anonymous, unlinkable)
