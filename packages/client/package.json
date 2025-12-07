@@ -1,0 +1,24 @@
+{
+    "name": "@scopeblind/client",
+    "version": "0.1.0",
+    "description": "ScopeBlind client SDK - cryptographic rate limiting without user tracking",
+    "main": "dist/scopeblind-client-voprf.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "esbuild src/index.ts --bundle --outfile=dist/scopeblind-client.js --format=iife --global-name=ScopeBlindVOPRF"
+    },
+    "keywords": [
+        "rate-limiting",
+        "privacy",
+        "voprf",
+        "anonymous",
+        "cryptography"
+    ],
+    "author": "ScopeBlind",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/scopeblind/scopeblind.git"
+    },
+    "homepage": "https://scopeblind.com"
+}
