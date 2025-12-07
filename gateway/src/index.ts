@@ -39,7 +39,7 @@ app.all('/api/*', async (c) => {
     // 1. Verify the ScopeBlind proof
     if (proofHeader || tokenHeader) {
         try {
-            const verifierUrl = c.env.SCOPEBLIND_VERIFIER_URL || 'https://scopeblind-verifier-deterministic.tomjwxf.workers.dev';
+            const verifierUrl = c.env.SCOPEBLIND_VERIFIER_URL || 'https://verifier.scopeblind.com';
             const verifyResponse = await fetch(`${verifierUrl}/verify`, {
                 method: 'POST',
                 headers: {

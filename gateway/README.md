@@ -24,7 +24,7 @@ Edit `wrangler.toml`:
 ```toml
 [vars]
 BACKEND_URL = "https://your-api.example.com"
-SCOPEBLIND_VERIFIER_URL = "https://scopeblind-verifier-deterministic.tomjwxf.workers.dev"
+SCOPEBLIND_VERIFIER_URL = "https://verifier.scopeblind.com"
 ```
 
 ## How It Works
