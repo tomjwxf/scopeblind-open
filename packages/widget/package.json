@@ -1,0 +1,30 @@
+{
+    "name": "@scopeblind/widget",
+    "version": "0.0.1",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/scopeblind.umd.js",
+    "module": "./dist/scopeblind.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/scopeblind.es.js",
+            "require": "./dist/scopeblind.umd.js"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "typescript": "^5.2.2",
+        "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "@noble/curves": "^1.2.0",
+        "@noble/hashes": "^1.3.2",
+        "@cloudflare/voprf-ts": "^0.1.0"
+    }
+}

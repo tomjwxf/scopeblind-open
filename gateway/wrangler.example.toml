@@ -1,0 +1,13 @@
+name = "my-scopeblind-gateway"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[vars]
+# Your backend API URL (where requests are forwarded after verification)
+BACKEND_URL = "https://your-api.example.com"
+
+# ScopeBlind verifier URL (use the default or self-host your own)
+SCOPEBLIND_VERIFIER_URL = "https://scopeblind-verifier-deterministic.tomjwxf.workers.dev"
+
+# Optional: Secret for authenticating with verifier
+# Set via: npx wrangler secret put SCOPEBLIND_SECRET
